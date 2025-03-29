@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carwash Il Delfino - Autolavaggio Self Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Carwash Il Delfino</h1>
+            </div>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#prezzi">Prezzi</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Benvenuto al Carwash Il Delfino</h2>
+                <p class="hero-subtitle">Il tuo autolavaggio self-service di fiducia</p>
+                <p class="locations">Sedi: Cairate, Olgiate Olona</p>
+                <a href="#servizi" class="cta-button red-button">Scopri i nostri servizi</a>
+            </div>
+        </section>
+
+        <section id="chi-siamo" class="about">
+            <h2>I nostri autolavaggi</h2>
+            <div class="location-buttons">
+                <button class="location-btn active" data-sede="cairate">
+                    <span class="btn-text">Cairate</span>
+                </button>
+                <button class="location-btn" data-sede="olgiate">
+                    <span class="btn-text">Olgiate Olona</span>
+                </button>
+            </div>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Dal <strong>2018</strong> ci prendiamo cura della tua auto con <strong>passione e professionalità</strong>.<br><br>Il nostro autolavaggio è dotato delle <strong>migliori tecnologie</strong> per garantire una pulizia impeccabile, dentro e fuori. Offriamo <strong>servizi completi</strong> per donare alla tua auto <strong>freschezza e brillantezza</strong> ogni giorno. Ti aspettiamo!</p>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <!-- Immagini Cairate -->
+                        <div class="slide active" data-sede="cairate">
+                            <img src="images/cairate1.jpg" alt="Autolavaggio Cairate 1">
+                        </div>
+                        <div class="slide" data-sede="cairate">
+                            <img src="images/cairate2.jpg" alt="Autolavaggio Cairate 2">
+                        </div>
+                        <div class="slide" data-sede="cairate">
+                            <img src="images/cairate3.jpg" alt="Autolavaggio Cairate 3">
+                        </div>
+                        <div class="slide" data-sede="cairate">
+                            <img src="images/cairate4.jpg" alt="Autolavaggio Cairate 4">
+                        </div>
+                        <!-- Immagini Olgiate -->
+                        <div class="slide" data-sede="olgiate">
+                            <img src="images/olgiate1.jpg" alt="Autolavaggio Olgiate 1">
+                        </div>
+                        <div class="slide" data-sede="olgiate">
+                            <img src="images/olgiate2.jpg" alt="Autolavaggio Olgiate 2">
+                        </div>
+                        <div class="slide" data-sede="olgiate">
+                            <img src="images/olgiate3.jpg" alt="Autolavaggio Olgiate 3">
+                        </div>
+                    </div>
+                    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servizi" class="services">
+            <h2>I Nostri Servizi</h2>
+            <div class="service-tabs">
+                <button class="tab-button active" data-tab="piazzole">Piazzole Self</button>
+                <button class="tab-button" data-tab="portale">Portale Istobal</button>
+                <button class="tab-button" data-tab="pulizia">Pulizia Interna</button>
+            </div>
+            
+            <div class="services-content">
+                <div class="tab-content active" id="piazzole">
+                    <div class="piazzole-container">
+                        <div class="program-grid">
+                            <div class="program-box">
+                                <div class="program-icon">P1</div>
+                                <div class="program-text">Prodotto per cerchi, sporco tenace e moscerini</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P2</div>
+                                <div class="program-text">Super schiuma attiva con polish</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P3</div>
+                                <div class="program-text">Emoliente alta pressione</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P4</div>
+                                <div class="program-text">Spazzole con setole naturali anti graffio</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P5</div>
+                                <div class="program-text">Risciacquo con acqua di rete</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P6</div>
+                                <div class="program-text">Cera brillante (in combinazione con P2 per massimo effetto)</div>
+                            </div>
+                            <div class="program-box">
+                                <div class="program-icon">P7</div>
+                                <div class="program-text">Risciacquo finale con acqua osmotizzata</div>
+                            </div>
+                        </div>
+                        <div class="piazzola-image">
+                            <img src="images/pista.jpg" alt="Piazzola autolavaggio" class="bay-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="portale">
+                    <div class="portal-container">
+                        <div class="portal-programs">
+                            <div class="portal-box red">
+                                <div class="portal-icon">P1</div>
+                                <div class="portal-text"><strong>LAVAGGIO COMPLETO NORMALE (€9)</strong><br>Emolliente, alta pressione, cerchi, cera e asciugatura</div>
+                            </div>
+                            <div class="portal-box pink">
+                                <div class="portal-icon">P2</div>
+                                <div class="portal-text"><strong>LAVAGGIO INFINITY MOUSSE (€11)</strong><br>Lavaggio normale + super schiuma intensiva</div>
+                            </div>
+                            <div class="portal-box blue">
+                                <div class="portal-icon">P3</div>
+                                <div class="portal-text"><strong>LAVAGGIO CERA SPECIALE (€14)</strong><br>Lavaggio normale + cera effetto super riflettente</div>
+                            </div>
+                            <div class="portal-box orange">
+                                <div class="portal-icon">P4</div>
+                                <div class="portal-text"><strong>LAVAGGIO EXTRA INTENSIVO (€17)</strong><br>Lavaggio normale + infinity mousse + cera speciale super riflettente</div>
+                            </div>
+                            <div class="portal-box yellow">
+                                <div class="portal-icon">P5</div>
+                                <div class="portal-text"><strong>SOLO ASCIUGATURA (€3,50)</strong><br>Cera + asciugatura</div>
+                            </div>
+                        </div>
+                        <div class="portal-image">
+                            <img src="images/portale_fronte.jpg" alt="Portale autolavaggio" class="portal-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="pulizia">
+                    <div class="pulizia-container">
+                        <div class="program-grid">
+                            <div class="program-item">
+                                <div class="program-desc">Aspirapolvere professionale</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Erogatore aria compressa</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Erogatore profumo antibatterico</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Macchina pulizia tappetini</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Gonfia gomme</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Erogatore carta assorbente</div>
+                            </div>
+                            <div class="program-item">
+                                <div class="program-desc">Macchina spremipelle</div>
+                            </div>
+                        </div>
+                        <div class="pulizia-slider-container">
+                            <div class="pulizia-slider">
+                                <div class="pulizia-slide active">
+                                    <img src="images/pulizia1.jpg" alt="Pulizia interna 1" class="cleaning-image">
+                                </div>
+                                <div class="pulizia-slide">
+                                    <img src="images/pulizia2.jpg" alt="Pulizia interna 2" class="cleaning-image">
+                                </div>
+                                <div class="pulizia-slide">
+                                    <img src="images/pulizia3.jpg" alt="Pulizia interna 3" class="cleaning-image">
+                                </div>
+                            </div>
+                            <button class="slider-nav prev" onclick="prevPuliziaSlide()">❮</button>
+                            <button class="slider-nav next" onclick="nextPuliziaSlide()">❯</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="showPuliziaSlide(0)"></span>
+                                <span class="dot" onclick="showPuliziaSlide(1)"></span>
+                                <span class="dot" onclick="showPuliziaSlide(2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prezzi" class="pricing">
+            <div class="section-header">
+                <h2>Prezzi</h2>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <h3>Metodi di pagamento</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li>Accettiamo <strong>contanti e pagamenti POS</strong>.</li>
+                            <li>Puoi acquistare <strong>gettoni</strong> o utilizzare la nostra <strong>card ricaricabile</strong>.</li>
+                            <li>1€ equivale a 1 gettone.</li>
+                            <li><strong>Bonus fedeltà</strong>: ogni 5€ spesi ricevi <strong>1 gettone omaggio</strong> (valido anche per le ricariche della card).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <h3>Piazzole Self-Service</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <ul>
+                            <li>Ogni programma ha una <strong>durata prestabilita</strong> e si attiva con 1 gettone o 1€ della card.</li>
+                            <li>Puoi cambiare programma <strong>in qualsiasi momento</strong> prima della fine del tempo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <h3>Portale Istobal</h3>
+                    </div>
+                    <div class="pricing-content">
+                        <p>Scegli il programma più adatto alle tue esigenze:</p>
+                        <ul class="portal-prices">
+                            <li><strong>P1</strong> – <strong>€9</strong></li>
+                            <li><strong>P2</strong> – <strong>€11</strong></li>
+                            <li><strong>P3</strong> – <strong>€14</strong></li>
+                            <li><strong>P4</strong> – <strong>€17</strong></li>
+                            <li><strong>P5</strong> (solo asciugatura) – <strong>€3.50</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti" class="contact">
+            <h2>Contatti</h2>
+            <div class="contact-info">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Orari</h3>
+                        <p>Aperto 24/7</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Indirizzi</h3>
+                        <p>Via Pietro Nenni 6, Cairate (VA)<br>Via Marzabotto 20, Olgiate Olona (VA)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefono</h3>
+                        <p>+39 3356278433</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>ildelfino.cairate@gmail.com</p>
+                    </div>
+                </div>
+                <div class="maps-container">
+                    <div class="map-section">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.5076050650446!2d8.860059776489896!3d45.680784371078325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478688db88835e67%3A0xc895eb4a7fe2a816!2sVia%20Pietro%20Nenni%2C%206%2C%2021050%20Cairate%20VA!5e0!3m2!1sit!2sit!4v1742984114723!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://www.google.com/maps/dir//Via+Pietro+Nenni+6+Cairate+VA" target="_blank" class="map-overlay">
+                                <i class="fas fa-location-arrow"></i>
+                                <span>Apri nel navigatore</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="map-section">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5580.987461196188!2d8.885789276486829!3d45.62081697107695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47868c3c3ec36dfb%3A0x4beda8df028c173b!2sVia%20Marzabotto%2C%2020%2C%2021057%20Olgiate%20Olona%20VA!5e0!3m2!1sit!2sit!4v1742984657807!5m2!1sit!2sit" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://www.google.com/maps/dir//Via+Marzabotto+20+Olgiate+Olona+VA" target="_blank" class="map-overlay">
+                                <i class="fas fa-location-arrow"></i>
+                                <span>Apri nel navigatore</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Carwash Il Delfino</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Via Pietro Nenni 6, 21050, Cairate (VA)</p>
+                <p><i class="fas fa-map-marker-alt"></i> Via Marzabotto 20, 21057, Olgiate Olona (VA)</p>
+                <p><i class="fas fa-phone"></i> +39 3356278433</p>
+                <p><i class="fas fa-envelope"></i> ildelfino.cairate@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Collegamenti rapidi</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#chi-siamo"><i class="fas fa-chevron-right"></i> Chi siamo</a></li>
+                    <li><a href="#servizi"><i class="fas fa-chevron-right"></i> Servizi</a></li>
+                    <li><a href="#prezzi"><i class="fas fa-chevron-right"></i> Prezzi</a></li>
+                    <li><a href="#contatti"><i class="fas fa-chevron-right"></i> Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Carwash Il Delfino. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Gestione navigazione attiva
+    function setActiveSection() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - sectionHeight/3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setActiveSection();
+    });
+    </script>
+</body>
+</html> 
